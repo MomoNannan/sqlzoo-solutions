@@ -1,5 +1,9 @@
 ## SELECT within SELECT Tutorial
 
+![image-20230110194615589](assets/image-20230110194615589.png)
+
+[SELECT within SELECT Tutorial](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)
+
 1. List each country name where the population is larger than that of 'Russia'.
 
   找出人口比俄罗斯多的欧洲国家.
@@ -230,6 +234,8 @@
 | GRE  | Greece         | Fernando Santos  |
 | ...  |                |                  |
 
+[The JOIN operation](https://sqlzoo.net/wiki/The_JOIN_operation)
+
 1.   The first example shows the goal scored by a player with the last name 'Bender'. The `*` says to list all the columns in the table - a shorter way of saying `matchid, teamid, player, gtime`.
 
      Modify it to show the `matchid` and *player* name for all goals scored by Germany. To identify German players, check for: `teamid = 'GER'`
@@ -310,12 +316,12 @@
 
 10.   **Show the stadium and the number of goals scored in each stadium.**
 
-      ```sql
-      SELECT stadium, COUNT(id)
-      FROM game
-      JOIN goal ON id=matchid
-      GROUP BY stadium
-      ```
+     ```sql
+     SELECT stadium, COUNT(id)
+     FROM game
+     JOIN goal ON id=matchid
+     GROUP BY stadium
+     ```
 
 11.   **For every match involving '**POL**', show the matchid, date and the number of goals scored.**
 
@@ -349,6 +355,8 @@
 ## More JOIN operations
 
 ![image-20230110145714558](assets/image-20230110145714558.png)
+
+[More JOIN operations](https://sqlzoo.net/wiki/More_JOIN_operations)
 
 *   casting 是级联表. 用于关联 movie 和 actor 这两张表.
 *   `ord` 是 order 的缩写, 即角色顺序 ( 第一主角, 第二主角等 )
